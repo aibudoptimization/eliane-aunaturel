@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliane.au.naturel — Questionnaire initial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="#" class="brand">Eliane.au.naturel</a>
+      <nav class="header-nav" aria-label="Navigation principale">
+        <a href="#hero">Accueil</a>
+        <a href="#cta" class="cta-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="hero" class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">Questionnaire initial</h1>
+
+      <section class="hero-block" aria-labelledby="presentation-heading">
+        <h2 id="presentation-heading" class="hero-heading">Présentation de service</h2>
+        <p>Ce questionnaire a pour objectif de mieux comprendre tes besoins et de déterminer si une collaboration est envisageable. Une fois le formulaire complété, un appel vidéo sera planifié afin de discuter de tes objectifs et de la démarche d'accompagnement.</p>
+      </section>
+
+      <section class="hero-block" aria-labelledby="specialite-heading">
+        <h2 id="specialite-heading" class="hero-heading">Ma spécialité</h2>
+        <p>Je me spécialise dans l'entraînement avec poids libres. Depuis plus de dix ans, je m'entraîne exclusivement avec ce type d'équipement (haltères, ballons, élastiques, etc.). Cette approche favorise le développement de l'équilibre, la stabilité, de la coordination et d'une force fonctionnelle utile au quotidien. En plus d'être accessible dans tous les gym et à la maison.</p>
+      </section>
+
+      <section class="hero-block" aria-labelledby="philosophie-heading">
+        <h2 id="philosophie-heading" class="hero-heading">Ma philosophie</h2>
+        <p>Ma mission est de t'aider à instaurer de saines habitudes de vie durables. Chaque programme est conçu pour évoluer à ton rythme, selon tes besoins et objectifs. Les changements durables nécessitent du temps et de la constance. Mon rôle est de t'accompagner de manière soutenue afin que tu obtiennes des résultats concrets.</p>
+      </section>
+
+      <section class="hero-block" aria-labelledby="approche-heading">
+        <h2 id="approche-heading" class="hero-heading">Mon approche</h2>
+        <p>Mon service repose sur un accompagnement personnalisé, offert en présentiel et en virtuel. Les rencontres en personne jouent un rôle clé dans la progression et l'atteinte des objectifs fixés.</p>
+      </section>
+
+      <section class="hero-block" aria-labelledby="contenu-heading">
+        <h2 id="contenu-heading" class="hero-heading">Contenu du service <span class="hero-sub">(personnalisable selon le niveau et les objectifs)</span></h2>
+        <ul class="hero-list">
+          <li>Séances d'entraînement privée (1 : 1)</li>
+          <li>Programme d'entraînement sur mesure, réalisable à domicile ou en salle de sport</li>
+          <li>Application pour suivi des charges et communication entre les séances 1 : 1</li>
+          <li>Suivis réguliers (quotidiens ou selon les besoins)</li>
+          <li>Concepts de base en nutrition et calcule du métabolisme de base (selon l'offre de service)</li>
+          <li>Prise de mesures avant et après le programme</li>
+          <li>Prise du pourcentage de masse grasse</li>
+          <li>Évaluation physique initiale et finale</li>
+        </ul>
+        <p class="hero-note">Pour faciliter la lecture, le féminin est utilisé tout au long de ce questionnaire, sans intention d'exclusion.</p>
+      </section>
+
+      <p class="hero-cta-wrap">
+        <button type="button" id="cta" class="btn btn-primary" aria-haspopup="dialog" aria-expanded="false" aria-controls="questionnaire-modal">Accéder au Questionnaire</button>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <a href="https://instagram.com/eliane.aunaturel" target="_blank" rel="noopener noreferrer" class="footer-insta" aria-label="Instagram">
+      <svg class="icon-insta" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+      <span>Instagram</span>
+    </a>
+  </footer>
+
+  <div id="questionnaire-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h2 id="modal-title" class="modal-title">Questionnaire</h2>
+        <button type="button" class="modal-close" data-close-modal aria-label="Fermer">×</button>
+      </div>
+
+      <form id="questionnaire-form" class="questionnaire-form" novalidate>
+        <div class="modal-body">
+          <fieldset class="q-section" data-section="1" data-section-title="Informations générales">
+            <legend class="q-section-legend">Section 1 — Informations générales</legend>
+            <div class="field">
+              <label for="q-nom">Prénom & nom</label>
+              <input type="text" id="q-nom" name="nom" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="q-email">Courriel</label>
+              <input type="email" id="q-email" name="courriel" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="q-sexe">Sexe</label>
+              <select id="q-sexe" name="sexe" required>
+                <option value="">— Choisir —</option>
+                <option value="femme">Femme</option>
+                <option value="homme">Homme</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="q-age">Quel âge as-tu?</label>
+              <select id="q-age" name="age" required>
+                <option value="">— Choisir —</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="q-ville">Dans quelle ville résides-tu actuellement?</label>
+              <input type="text" id="q-ville" name="ville" required autocomplete="address-level2">
+            </div>
+          </fieldset>
+
+          <fieldset class="q-section" data-section="2" data-section-title="Habitudes d'activité physique">
+            <legend class="q-section-legend">Section 2 — Habitudes d'activité physique</legend>
+            <div class="field">
+              <span class="field-label">As-tu accès à un espace d'entraînement?</span>
+              <div class="radio-group" role="group">
+                <label class="radio-label"><input type="radio" name="espace_entrainement" value="abonnement" required> Oui j'ai un abonnement</label>
+                <label class="radio-label"><input type="radio" name="espace_entrainement" value="gym_ou_jhabite"> Oui, il y a un gym où j'habite</label>
+                <label class="radio-label"><input type="radio" name="espace_entrainement" value="gym_chez_moi"> Oui j'ai un gym chez moi</label>
+                <label class="radio-label"><input type="radio" name="espace_entrainement" value="non"> Non</label>
+                <label class="radio-label"><input type="radio" name="espace_entrainement" value="autre"> Autre</label>
+              </div>
+              <div class="field-conditional" data-show-when="espace_entrainement" data-show-value="autre" hidden>
+                <label for="q-espace-autre">Précisez</label>
+                <input type="text" id="q-espace-autre" name="espace_entrainement_autre">
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">Actuellement, combien de séances d'entraînement fais-tu par semaine?</span>
+              <div class="radio-group" role="group">
+                <label class="radio-label"><input type="radio" name="seances_semaine" value="aucune" required> A) Aucune</label>
+                <label class="radio-label"><input type="radio" name="seances_semaine" value="1-2"> B) 1 à 2 séances</label>
+                <label class="radio-label"><input type="radio" name="seances_semaine" value="3-4"> C) 3 à 4 séances</label>
+                <label class="radio-label"><input type="radio" name="seances_semaine" value="5plus"> D) 5 séances ou plus</label>
+              </div>
+            </div>
+            <div class="field field-conditional" data-show-when="seances_semaine" data-hide-value="aucune" hidden>
+              <span class="field-label">Comment décrirais-tu l'intensité générale de tes entraînements actuels?</span>
+              <div class="radio-group" role="group">
+                <label class="radio-label"><input type="radio" name="intensite" value="faible"> A) Faible (ex: marche)</label>
+                <label class="radio-label"><input type="radio" name="intensite" value="moderee"> B) Modérée</label>
+                <label class="radio-label"><input type="radio" name="intensite" value="elevee"> C) Élevée</label>
+                <label class="radio-label"><input type="radio" name="intensite" value="tres_elevee"> D) Très élevée (ex : circuit, Boot Camp, HYROX)</label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">As-tu déjà pratiqué l'entraînement avec des poids libres (haltères, barres, kettlebells, etc.)?</span>
+              <div class="radio-group" role="group">
+                <label class="radio-label"><input type="radio" name="poids_libres" value="oui" required> A) Oui</label>
+                <label class="radio-label"><input type="radio" name="poids_libres" value="non"> B) Non</label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">Comment décrirais-tu le niveau d'activité physique de ton emploi?</span>
+              <div class="radio-group" role="group">
+                <label class="radio-label"><input type="radio" name="activite_emploi" value="assise" required> A) Principalement assise toute la journée</label>
+                <label class="radio-label"><input type="radio" name="activite_emploi" value="debout"> B) Debout une grande partie de la journée</label>
+                <label class="radio-label"><input type="radio" name="activite_emploi" value="deplace"> C) Je me déplace beaucoup (ex. : service, vente, restauration)</label>
+                <label class="radio-label"><input type="radio" name="activite_emploi" value="physique"> D) Travail très physique (ex. : construction, manutention)</label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">Sur une échelle de 0 à 5, comment évalues-tu les éléments suivants?</span>
+              <div class="slider-group">
+                <div class="slider-field">
+                  <label for="q-sommeil">Qualité de ton sommeil <span class="slider-hint">(0 = mauvais, 5 = excellent)</span></label>
+                  <input type="range" id="q-sommeil" name="sommeil" min="0" max="5" value="0" class="slider">
+                  <output for="q-sommeil" class="slider-value" aria-live="polite">0</output>
+                </div>
+                <div class="slider-field">
+                  <label for="q-alimentation">Qualité de ton alimentation <span class="slider-hint">(0 = mauvaise, 5 = excellente)</span></label>
+                  <input type="range" id="q-alimentation" name="alimentation" min="0" max="5" value="0" class="slider">
+                  <output for="q-alimentation" class="slider-value" aria-live="polite">0</output>
+                </div>
+                <div class="slider-field">
+                  <label for="q-stress">Niveau d'anxiété ou de stress <span class="slider-hint">(0 = très bas, 5 = très haut)</span></label>
+                  <input type="range" id="q-stress" name="stress" min="0" max="5" value="0" class="slider">
+                  <output for="q-stress" class="slider-value" aria-live="polite">0</output>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">As-tu actuellement une condition physique pouvant limiter certains types d'entraînement?</span>
+              <p class="field-hint">(ex. : blessure, douleur chronique, condition médicale, handicap)</p>
+              <input type="text" name="condition_physique" id="q-condition">
+            </div>
+          </fieldset>
+
+          <fieldset class="q-section" data-section="3" data-section-title="Objectifs et motivation">
+            <legend class="q-section-legend">Section 3 — Objectifs et motivation</legend>
+            <div class="field">
+              <span class="field-label">Quels sont tes objectifs principaux?</span>
+              <p class="field-subtext">Coche toutes les réponses applicables</p>
+              <div class="checkbox-group" role="group">
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="raffermir"> Raffermir / tonifier mon corps</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="masse"> Prendre la masse musculaire</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="perte_gras"> Perdre du gras</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="cardio"> Améliorer ma condition cardiovasculaire</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="condition_generale"> Améliorer ma condition physique générale</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="sentir_mieux"> Me sentir mieux dans mon corps</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="corps_fonctionnel"> Avoir un corps fonctionnel qui ne me limite pas dans mon quotidien</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="force"> Améliorer ma force</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="posture"> Améliorer ma posture</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="douleurs"> Réduire mes douleurs ou inconforts physiques</label>
+                <label class="checkbox-label"><input type="checkbox" name="objectifs" value="autre"> Autre (précise)</label>
+              </div>
+              <div class="field-conditional" data-show-when="objectifs" data-show-value="autre" data-show-type="checkbox" hidden>
+                <label for="q-objectifs-autre">Précisez</label>
+                <input type="text" id="q-objectifs-autre" name="objectifs_autre">
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">Dans quel délai aimerais-tu atteindre ces objectifs?</span>
+              <div class="radio-group" role="group">
+                <label class="radio-label"><input type="radio" name="delai" value="moins_3" required> A) Moins de 3 mois</label>
+                <label class="radio-label"><input type="radio" name="delai" value="3_6"> B) 3 à 6 mois</label>
+                <label class="radio-label"><input type="radio" name="delai" value="6_12"> C) 6 à 12 mois</label>
+                <label class="radio-label"><input type="radio" name="delai" value="plus_1an"> D) Plus d'un an</label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label">As-tu déjà entrepris une démarche de remise en forme par le passé?</span>
+              <div class="radio-group" role="group">
+                <label class="radio-label"><input type="radio" name="remise_forme" value="non" required> A) Non</label>
+                <label class="radio-label"><input type="radio" name="remise_forme" value="oui"> B) Oui</label>
+              </div>
+              <div class="field-conditional" data-show-when="remise_forme" data-show-value="oui" hidden>
+                <label for="q-arret">Qu'est-ce qui t'a fait arrêter?</label>
+                <input type="text" id="q-arret" name="arret">
+                <label for="q-pas_abandonner">Selon toi, qu'est-ce qui fera en sorte que tu n'abandonneras pas cette fois-ci?</label>
+                <input type="text" id="q-pas_abandonner" name="pas_abandonner">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="q-section" data-section="4" data-section-title="Relation avec l'alimentation">
+            <legend class="q-section-legend">Section 4 — Relation avec l'alimentation</legend>
+            <div class="field">
+              <span class="field-label">Comment décris-tu ta relation avec la nourriture?</span>
+              <div class="checkbox-group" role="group">
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="saine"> Je considère avoir une relation saine avec la nourriture</label>
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="pense_souvent"> Je pense souvent à la nourriture</label>
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="coupe_groupes"> Je coupe ou évite certains groupes alimentaires pour contrôler mon poids</label>
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="saute_repas"> Je saute parfois des repas</label>
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="coupable"> Je me sens coupable lorsque je mange des aliments que je juge “moins sains”</label>
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="restaurant_stress"> Manger au restaurant ou à l'extérieur me cause du stress</label>
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="trouble_alimentaire"> Je souffre ou ai souffert d'un trouble alimentaire diagnostiqué par un professionnel</label>
+                <label class="checkbox-label"><input type="checkbox" name="relation_nourriture" value="autre"> Autre (précise)</label>
+              </div>
+              <div class="field-conditional" data-show-when="relation_nourriture" data-show-value="trouble_alimentaire" data-show-type="checkbox" hidden>
+                <span class="field-label">Es-tu suivie par un professionnel pour ce trouble?</span>
+                <div class="radio-group" role="group">
+                  <label class="radio-label"><input type="radio" name="suivi_professionnel_trouble" value="oui"> A) Oui</label>
+                  <label class="radio-label"><input type="radio" name="suivi_professionnel_trouble" value="non"> B) Non</label>
+                </div>
+              </div>
+              <div class="field-conditional" data-show-when="relation_nourriture" data-show-value="autre" data-show-type="checkbox" hidden>
+                <label for="q-relation-autre">Précisez</label>
+                <input type="text" id="q-relation-autre" name="relation_nourriture_autre">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="q-section" data-section="5" data-section-title="Intérêt pour l'entraînement personnalisé">
+            <legend class="q-section-legend">Section 5 — Intérêt pour l'entraînement personnalisé</legend>
+            <div class="field">
+              <label for="q-declencheur">Quel a été l'élément déclencheur qui t'a donné envie de travailler avec moi?</label>
+              <input type="text" id="q-declencheur" name="declencheur" required>
+            </div>
+            <div class="field">
+              <label for="q-imagines">Lorsque tu penses à travailler avec une entraîneure personnelle, qu'est-ce que tu t'imagines?</label>
+              <input type="text" id="q-imagines" name="imagines" required>
+            </div>
+            <div class="field">
+              <label for="q-entourage">Comment ton entourage perçoit-il ton désir de t'entraîner et/ou de changer tes habitudes de vie?</label>
+              <input type="text" id="q-entourage" name="entourage" required>
+            </div>
+            <div class="field">
+              <label for="q-savoir">Qu'est-ce que tu veux que je sache sur toi pour t'aider au mieux?</label>
+              <input type="text" id="q-savoir" name="savoir" required>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="modal-footer">
+          <p class="modal-section-indicator" aria-live="polite">Section 1 sur 5</p>
+          <div class="modal-actions">
+            <button type="button" class="btn btn-secondary btn-prev" data-prev disabled>Précédent</button>
+            <button type="button" class="btn btn-primary btn-next" data-next>Suivant</button>
+            <button type="submit" class="btn btn-primary btn-submit" data-submit hidden>Soumettre</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
