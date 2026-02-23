@@ -193,8 +193,9 @@ body {
   position: relative;
   width: 100%;
   max-width: 520px;
+  height: 90vh;
   max-height: 90vh;
-  min-height: 200px;
+  min-height: 280px;
   background: var(--color-white);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
