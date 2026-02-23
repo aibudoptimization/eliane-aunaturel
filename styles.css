@@ -234,13 +234,22 @@ body {
 }
 .modal-close:hover { background: var(--color-pink-light); color: var(--color-text); }
 .modal-close:focus-visible { outline: 2px solid var(--color-purple); outline-offset: 2px; }
+
+/* Form fills remaining space so footer stays visible */
+.questionnaire-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
 .modal-body {
   overflow-y: auto;
   overflow-x: hidden;
   padding: var(--space-xl);
   flex: 1 1 0;
   min-height: 0;
-  max-height: calc(90vh - 140px);
   -webkit-overflow-scrolling: touch;
 }
 .modal-footer {
